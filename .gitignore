@@ -1,0 +1,20 @@
+# dependencies
+node_modules/
+
+# env file (VERY IMPORTANT)
+.env
+
+# uploads (optional but recommended)
+uploads/
+
+# logs
+logs/
+*.log
+
+# temp files
+tmp/
+temp/
+
+# OS files
+.DS_Store
+Thumbs.db
