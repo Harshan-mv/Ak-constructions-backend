@@ -26,8 +26,15 @@ if (!fs.existsSync(uploadsDir)) {
   fs.mkdirSync(uploadsDir, { recursive: true });
 }
 
+//
+// 🔥 CORS CONFIG (IMPORTANT)
+//
+app.use(cors({
+  origin: "https://ak-construction-frontend.vercel.app",
+  credentials: true,
+}));
+
 // Middleware
-app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
