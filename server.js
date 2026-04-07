@@ -30,7 +30,10 @@ if (!fs.existsSync(uploadsDir)) {
 // 🔥 CORS CONFIG (IMPORTANT)
 //
 app.use(cors({
-  origin: "https://ak-construction-frontend.vercel.app",
+  origin: [
+    "http://localhost:5173",
+    "https://ak-construction-frontend.vercel.app"
+  ],
   credentials: true,
 }));
 
