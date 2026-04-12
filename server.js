@@ -32,7 +32,9 @@ if (!fs.existsSync(uploadsDir)) {
 app.use(cors({
   origin: [
     "http://localhost:5173",
-    "https://ak-construction-frontend.vercel.app"
+    "https://akconstructionbyraju.com",
+    "https://www.akconstructionbyraju.com",
+    "https://api.akconstructionbyraju.com"
   ],
   credentials: true,
 }));
